@@ -29,5 +29,3 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionPosition: "bottom",
   captionDelay: 250,
 });
-
-galleryRef.addEventListener("click", onImageClick);
