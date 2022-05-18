@@ -17,9 +17,11 @@ function makeGalleryItemsMurkup(arrayItems) {
   const itemsMarkupString = arrayItems
     .map((item) => {
       return `
-        <a class="gallery__item" href="${item.original}">
+        <li>
+          <a class="gallery__item" href="${item.original}">
             <img class="gallery__image lazyload" loading="lazy" data-src="${item.preview}" alt="${item.description}" />
-        </a>`;
+          </a>
+        </li>`;
     })
     .join("");
   galleryRef.insertAdjacentHTML("beforeend", itemsMarkupString);

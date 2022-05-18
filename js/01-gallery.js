@@ -55,6 +55,7 @@ function onImageClick(event) {
 
     instance.close();
     window.removeEventListener("keydown", closeModalImage);
+    galleryRef.removeEventListener("click", onImageClick);
   }
 }
 
